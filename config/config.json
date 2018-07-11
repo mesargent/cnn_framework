@@ -1,0 +1,23 @@
+{"pos_images_path": "data/pos_images/",
+	"neg_images_path": "data/neg_images/", 
+	"hyper_parameters": {},
+	"preprocessors":["resize", "do_nothing"],
+	"preprocessor_params":{
+		"do_nothing":{},
+		"resize": {
+			"size": [80, 80, 3]
+		}
+	},
+	"nn":"shallownet",
+	"input_img_size": [80, 80, 3],
+	"classes": 2,
+	"loss_function": "categorical_crossentropy",
+	"opt":"sgd",
+	"learning_rate": 0.005,
+	"metrics":["accuracy"],
+	"batch_size": 32,
+	"epochs": 100, 
+	"verbose": 1,
+	"target_names":["positive", "negative"]
+
+}
